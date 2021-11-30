@@ -11,8 +11,8 @@ function Question({ question, onAnswered }) {
       setTimeRemaining(10)
     };
 
-    return function clearTimeout() {
-      clearInterval(timerId);
+    return function () {
+      clearTimeout(timerId);
     };
 
   }, [timeRemaining]);
